@@ -1,0 +1,101 @@
+.menu-section {
+    background-color: var(--background-dark);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--secondary-color);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.menu-card {
+    background: rgba(255, 255, 255, 0.05);
+    /* Glass base */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy transition */
+
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.1}s;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-10px) scale(1.02);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        border-color: var(--secondary-color);
+        /* Neon border on hover */
+
+        .card-image img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.card-image {
+    height: 250px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+}
+
+.card-content {
+    padding: var(--spacing-md);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.item-name {
+    font-size: 1.5rem;
+    color: var(--text-light);
+}
+
+.item-price {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.item-description {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    width: 100%;
+    margin-top: 1rem;
+}

@@ -1,0 +1,22 @@
+<section class="section menu-section" id="menu">
+    <div class="container">
+        <h2 class="section-title">Our Favorites</h2>
+        <div class="menu-grid">
+            @for (item of menuItems; track item.name) {
+            <div class="menu-card">
+                <div class="card-image">
+                    <img [src]="item.image" [alt]="item.name">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="item-name">{{ item.name }}</h3>
+                        <span class="item-price">{{ item.price }}</span>
+                    </div>
+                    <p class="item-description">{{ item.description }}</p>
+
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

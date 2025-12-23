@@ -1,0 +1,96 @@
+.location-section {
+    background-color: var(--background-dark);
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-lg);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(255, 0, 85, 0.1);
+    /* Softer glow */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    text-align: left;
+
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.schedule {
+    h3 {
+        color: var(--secondary-color);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            strong {
+                color: var(--primary-color);
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.map-placeholder {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px dashed var(--text-muted);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    color: var(--text-muted);
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.map-btn {
+    margin: var(--spacing-md);
+    min-width: 200px;
+    text-align: center;
+}

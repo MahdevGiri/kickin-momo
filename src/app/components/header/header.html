@@ -1,0 +1,22 @@
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <span class="brand-nepal">Kickin'</span> <span class="brand-bites">Momo</span>
+        </div>
+
+        <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" [class.active]="isMenuOpen">
+            <a href="#" class="nav-link" (click)="closeMenu()">Home</a>
+            <a href="#about" class="nav-link" (click)="closeMenu()">Our Story</a>
+            <a href="#menu" class="nav-link" (click)="closeMenu()">Menu</a>
+            <a href="#location" class="nav-link" (click)="closeMenu()">Find Us</a>
+            <a href="#feedback" class="nav-link" (click)="closeMenu()">Feedback</a>
+        </nav>
+
+    </div>
+</header>

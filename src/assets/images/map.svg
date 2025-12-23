@@ -1,0 +1,22 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" style="background-color: #050505;">
+  <!-- Streets -->
+  <path d="M0 100 H800 M0 200 H800 M0 300 H800" stroke="#1a1a1a" stroke-width="20"/>
+  <path d="M200 0 V400 M400 0 V400 M600 0 V400" stroke="#1a1a1a" stroke-width="20"/>
+  
+  <!-- Neon Roads -->
+  <path d="M0 200 H800" stroke="#00F0FF" stroke-width="2" opacity="0.5"/>
+  <path d="M400 0 V400" stroke="#00F0FF" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Location Pin Glow -->
+  <circle cx="400" cy="200" r="15" fill="#FF0055" opacity="0.3">
+    <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Location Pin -->
+  <circle cx="400" cy="200" r="8" fill="#FF0055" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Label -->
+  <text x="400" y="160" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#fff" style="text-shadow: 0 0 10px #000;">Kickin Momo</text>
+  <text x="400" y="180" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#00F0FF">519 E 7th St</text>
+</svg>
