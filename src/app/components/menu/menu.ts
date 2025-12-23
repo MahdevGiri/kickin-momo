@@ -30,7 +30,7 @@ export class Menu {
       name: 'Handsome burger',
       description: 'A juicy, handcrafted burger with fresh toppings.',
       price: '$13.00',
-      image: 'assets/images/handsome_burger.jpg'
+      image: 'assets/images/handsome_burger.png'
     }
   ];
 }
