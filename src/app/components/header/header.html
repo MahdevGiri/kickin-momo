@@ -11,10 +11,11 @@
         </button>
 
         <nav class="nav" [class.active]="isMenuOpen">
-            <a href="#" class="nav-link" (click)="closeMenu()">Home</a>
-            <a href="#about" class="nav-link" (click)="closeMenu()">Our Story</a>
-            <a href="#menu" class="nav-link" (click)="closeMenu()">Menu</a>
-            <a href="#location" class="nav-link" (click)="closeMenu()">Find Us</a>
+            <a routerLink="/" fragment="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                class="nav-link" (click)="closeMenu()">Home</a>
+            <a routerLink="/" fragment="about" class="nav-link" (click)="closeMenu()">Our Story</a>
+            <a routerLink="/menu" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Menu</a>
+            <a routerLink="/" fragment="location" class="nav-link" (click)="closeMenu()">Find Us</a>
 
         </nav>
 

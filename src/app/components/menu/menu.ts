@@ -9,27 +9,23 @@ import { Component } from '@angular/core';
 export class Menu {
   menuItems = [
     {
-      name: 'Steamed Momos',
-      description: 'Hand-wrapped dumplings filled with spiced chicken or vegetables, served with our signature sesame-tomato chutney.',
-      price: '$10.00',
-      image: 'assets/images/momo.png'
+      name: 'Chilli Momos',
+      description: 'Juicy dumplings tossed in a spicy, tangy chilli sauce with bell peppers and onions.',
+      image: 'assets/images/chilli_momo.png'
     },
     {
       name: 'Chicken Chow Mein',
       description: 'Stir-fried noodles with marinated chicken, fresh vegetables, and an authentic blend of exotic spices.',
-      price: '$12.00',
       image: 'assets/images/chowmein.png'
     },
     {
       name: 'Sekuwa & Rice',
       description: 'Grilled marinated meat skewers cooked over an open flame, served with rice and pickles.',
-      price: '$14.00',
       image: 'assets/images/sekuwa.png'
     },
     {
-      name: 'Handsome burger',
-      description: 'A juicy, handcrafted burger with fresh toppings.',
-      price: '$13.00',
+      name: 'Momo burger',
+      description: 'A juicy, handcrafted burger with beef patty, pressed momo and fresh toppings.',
       image: 'assets/images/handsome_burger.png'
     }
   ];
