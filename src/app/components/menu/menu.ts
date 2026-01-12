@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class Menu {
   menuItems = [
     {
-      name: 'Chilli Momos',
+      name: 'C. Momo',
       description: 'Juicy dumplings tossed in a spicy, tangy chilli sauce with bell peppers and onions.',
       image: 'assets/images/chilli_momo.png'
     },
@@ -24,7 +24,7 @@ export class Menu {
       image: 'assets/images/sekuwa.png'
     },
     {
-      name: 'Momo burger',
+      name: 'Momo Burger',
       description: 'A juicy, handcrafted burger with beef patty, pressed momo and fresh toppings.',
       image: 'assets/images/handsome_burger.png'
     }
