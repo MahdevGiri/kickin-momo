@@ -9,11 +9,20 @@
                 <div class="menu-grid">
                     @for (item of category.items; track item.name) {
                     <div class="menu-item-card">
-                        <div class="item-header">
-                            <h3 class="item-name">{{ item.name }}</h3>
-                            <span class="item-price">{{ item.price }}</span>
+                        <div class="item-content">
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h3 class="item-name">{{ item.name }}</h3>
+                                    <span class="item-price">{{ item.price }}</span>
+                                </div>
+                                <p class="item-description">{{ item.description }}</p>
+                            </div>
+                            @if (item.image) {
+                            <div class="item-image">
+                                <img [src]="item.image" [alt]="item.name">
+                            </div>
+                            }
                         </div>
-                        <p class="item-description">{{ item.description }}</p>
                     </div>
                     }
                 </div>
