@@ -1,139 +1,187 @@
 .full-menu-section {
-    padding: 80px 0;
-    background: #111;
+    padding: 100px 0;
     min-height: 100vh;
+    background: #0a0a0a;
+    /* Deep dark background */
     color: #fff;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+
+    /* Background decoration (optional subtle glow) */
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 50%;
+        height: 50%;
+        background: radial-gradient(circle, rgba(255, 0, 85, 0.1) 0%, transparent 70%);
+        pointer-events: none;
+        z-index: 0;
+    }
 
     .container {
-        max-width: 1200px;
+        max-width: 1280px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 24px;
+        position: relative;
+        z-index: 1;
     }
 
     .page-title {
         text-align: center;
-        font-size: 3.5rem;
-        margin-bottom: 60px;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 700;
-        background: linear-gradient(135deg, #FF0055, #FF4D00);
+        font-size: 4rem;
+        margin-bottom: 80px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        background: linear-gradient(135deg, #fff 30%, #FF0055 100%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #FF0055;
+            border-radius: 2px;
+        }
     }
 
     .menu-categories {
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 80px;
     }
 
     .category {
         .category-title {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #FF0055;
-            border-bottom: 2px solid rgba(255, 0, 85, 0.3);
-            padding-bottom: 10px;
-            display: inline-block;
-            font-family: 'Outfit', sans-serif;
+            font-size: 2.25rem;
+            margin-bottom: 40px;
+            color: #fff;
+            padding-left: 20px;
+            border-left: 6px solid #FF0055;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: '';
+                flex-grow: 1;
+                height: 1px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent);
+                margin-left: 20px;
+            }
         }
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
         }
     }
 
     .menu-item-card {
         background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 16px;
-        padding: 24px;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        backdrop-filter: blur(10px);
-        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         display: flex;
         flex-direction: column;
+        height: 100%;
+        position: relative;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
         &:hover {
+            transform: translateY(-8px);
             background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 0, 85, 0.3);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 0, 85, 0.4);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+
+            .card-image-container img {
+                transform: scale(1.08);
+            }
         }
 
-        .item-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            height: 100%;
-        }
-
-        .item-details {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .item-image {
-            width: 110px;
-            height: 110px;
-            border-radius: 12px;
+        .card-image-container {
+            width: 100%;
+            height: 240px;
             overflow: hidden;
-            flex-shrink: 0;
-            border: 2px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            background: #1a1a1a;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                transition: transform 0.5s ease;
+                transition: transform 0.6s ease;
+            }
+
+            /* Gradient overlay for text readability if we put text on top, 
+               but here mostly to smooth the transition to the body */
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 40%;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
             }
         }
 
-        &:hover .item-image img {
-            transform: scale(1.1);
-        }
-
-        .item-header {
+        .card-details {
+            padding: 24px;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-            gap: 15px;
-
-            .item-name {
-                font-size: 1.25rem;
-                font-weight: 600;
-                color: #fff;
-                margin: 0;
-                font-family: 'Outfit', sans-serif;
-                line-height: 1.3;
-            }
-
-            .item-price {
-                font-size: 1.15rem;
-                font-weight: 700;
-                color: #FF4D00;
-                text-shadow: 0 0 10px rgba(255, 77, 0, 0.3);
-                white-space: nowrap;
-            }
-        }
-
-        .item-description {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin: 0;
+            flex-direction: column;
             flex-grow: 1;
+
+            .header-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 12px;
+                gap: 16px;
+
+                .item-name {
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    color: #fff;
+                    margin: 0;
+                    line-height: 1.3;
+                }
+
+                .price-badge {
+                    background: rgba(255, 0, 85, 0.15);
+                    color: #FF4D00;
+                    padding: 6px 12px;
+                    border-radius: 99px;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    border: 1px solid rgba(255, 77, 0, 0.2);
+                }
+            }
+
+            .item-description {
+                font-size: 0.95rem;
+                color: rgba(255, 255, 255, 0.65);
+                line-height: 1.6;
+                margin: 0;
+            }
         }
     }
 }
@@ -142,63 +190,43 @@
     .full-menu-section {
         padding: 60px 0;
 
-        .container {
-            padding: 0 15px;
-        }
-
         .page-title {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 40px;
-        }
-
-        .menu-categories {
-            gap: 40px;
         }
 
         .category {
             .category-title {
-                font-size: 1.5rem;
-                margin-bottom: 20px;
-                padding-bottom: 8px;
+                font-size: 1.75rem;
+                border-left-width: 4px;
+                padding-left: 15px;
             }
 
             .menu-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                /* Full width cards on mobile */
+                gap: 24px;
             }
         }
 
         .menu-item-card {
-            padding: 16px;
-
-            .item-content {
-                gap: 16px;
-                /* Keep side-by-side layout for small items if possible, or stack for large images */
-                /* Let's try stacking image on top for a 'card' view which looks nice on mobile */
-                flex-direction: column-reverse;
-            }
-
-            .item-image {
-                width: 100%;
+            .card-image-container {
                 height: 200px;
-                /* Bigger hero image for mobile */
-                margin-bottom: 4px;
             }
 
-            .item-header {
-                margin-bottom: 8px;
+            .card-details {
+                padding: 20px;
 
-                .item-name {
-                    font-size: 1.2rem;
+                .header-row {
+                    .item-name {
+                        font-size: 1.25rem;
+                    }
+
+                    .price-badge {
+                        font-size: 0.95rem;
+                        padding: 4px 10px;
+                    }
                 }
-
-                .item-price {
-                    font-size: 1.1rem;
-                }
-            }
-
-            .item-description {
-                font-size: 0.9rem;
             }
         }
     }
