@@ -11,22 +11,22 @@ export class Menu {
     {
       name: 'C. Momo',
       description: 'Juicy dumplings tossed in a spicy, tangy chilli sauce with bell peppers and onions.',
-      image: 'assets/images/chilli_momo.png'
+      image: 'assets/images/chilli-momo.png'
     },
     {
       name: 'Chicken Chow Mein',
       description: 'Stir-fried noodles with marinated chicken, fresh vegetables, and an authentic blend of exotic spices.',
-      image: 'assets/images/chowmein.png'
+      image: 'assets/images/chicken-chowmein.png'
     },
     {
       name: 'Sekuwa & Rice',
       description: 'Grilled marinated meat skewers cooked over an open flame, served with rice and pickles.',
-      image: 'assets/images/sekuwa.png'
+      image: 'assets/images/sekuwa-spiral-potato.png'
     },
     {
       name: 'Momo Burger',
       description: 'A juicy, handcrafted burger with beef patty, pressed momo and fresh toppings.',
-      image: 'assets/images/handsome_burger.png'
+      image: 'assets/images/momo-burger.png'
     }
   ];
 }
