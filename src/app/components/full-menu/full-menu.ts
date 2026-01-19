@@ -43,7 +43,7 @@ export class FullMenu {
                 { name: 'Vegetable Chow Mein', price: '$12.99', description: 'Classic Nepali-style stir-fried noodles with fresh vegetables and savory sauces.', image: 'assets/images/veg-chowmein.png' },
                 { name: 'Chicken Chow Mein', price: '$12.99', description: 'Stir-fried noodles with tender chicken chunks and vegetables, tossed in savory sauces.', image: 'assets/images/chicken-chowmein.png' },
                 { name: 'Beef Chow Mein', price: '$13.99', description: 'Savory stir-fried noodles with seared beef strips and fresh vegetables.', image: 'assets/images/beef-chowmein.png' },
-                { name: 'Mixed Chow Mein', price: '$14.99', description: 'The ultimate combo—noodles stir-fried with chicken, beef, and veggies.', image: 'assets/images/mix-chowmein.png' }
+                { name: 'Mixed Chow Mein', price: '$14.99', description: 'The ultimate combo—noodles stir-fried with chicken, beef, and veggies.', image: 'assets/images/mixed-chowmein.png' }
             ]
         },
         {
