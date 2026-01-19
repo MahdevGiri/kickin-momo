@@ -73,10 +73,10 @@ export class FullMenu {
             title: 'BEST OF KICKIN COMBOS',
             items: [
                 { name: 'Momo + Fries + Drink', price: '$17.99', description: 'Your choice of steamed or fried momos served with fries and a drink.', image: 'assets/images/momo+fries+drink.png' },
-                { name: 'Chilli Momo + Loaded Rice + Drink', price: '$18.99', description: 'Spicy chili momos paired with flavorful loaded rice and a refreshing drink.', image: 'assets/images/chilli momo+fries+drink.png' },
+                { name: 'Chilli Momo + Loaded Rice + Drink', price: '$18.99', description: 'Spicy chili momos paired with flavorful loaded rice and a refreshing drink.', image: 'assets/images/chilli-momo+fries+drink.png' },
                 { name: 'Sekuwa + Rice + Drink', price: '$18.99', description: 'Nepali BBQ sekuwa served with rice and drink — bold, smoky, and filling.', image: 'assets/images/sekuwa+rice+drink.png' },
-                { name: 'Momo Burger + Fries + Drink', price: '$18.99', description: 'Our popular momo burger combo with crispy fries and a drink.', image: 'assets/images/momo burger+fries+drink.png' },
-                { name: 'Beef Bowl + Purple Rice + Drink', price: '$19.99', description: 'Beef bowl with purple rice, fries, and drink — premium flavor on wheels.', image: 'assets/images/beef-bowl+purple rice+drink.png' }
+                { name: 'Momo Burger + Fries + Drink', price: '$18.99', description: 'Our popular momo burger combo with crispy fries and a drink.', image: 'assets/images/momo-burger+fries+drink.png' },
+                { name: 'Beef Bowl + Purple Rice + Drink', price: '$19.99', description: 'Beef bowl with purple rice, fries, and drink — premium flavor on wheels.', image: 'assets/images/beef-bowl+purple-rice+drink.png' }
             ]
         },
         {
