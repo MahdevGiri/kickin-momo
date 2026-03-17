@@ -14,19 +14,19 @@ export class Menu {
       image: 'assets/images/chilli-momo.png'
     },
     {
-      name: 'Chicken Chow Mein',
-      description: 'Stir-fried noodles with marinated chicken, fresh vegetables, and an authentic blend of exotic spices.',
-      image: 'assets/images/chicken-chowmein.png'
+      name: 'Chowmein',
+      description: 'Classic Nepali style stir-fried noodles with fresh vegetables and savory sauces.',
+      image: 'assets/images/chowmein.png'
     },
     {
-      name: 'Sekuwa & Rice',
-      description: 'Grilled marinated meat skewers cooked over an open flame, served with rice and pickles.',
-      image: 'assets/images/sekuwa-spiral-potato.png'
+      name: 'Sekuwa with Fries',
+      description: 'Authentic Nepali BBQ skewers marinated in Himalayan spices, served with fries.',
+      image: 'assets/images/sekuwa-with-fries.png'
     },
     {
-      name: 'Momo Burger',
-      description: 'A juicy, handcrafted burger with beef patty, pressed momo and fresh toppings.',
-      image: 'assets/images/momo-burger.png'
+      name: 'Bulgogi Bowl',
+      description: 'Sweet and savory marinated beef bulgogi served over fluffy rice with homemade kimchi and sautéed greens.',
+      image: 'assets/images/bulgogi-bowl.png'
     }
   ];
 }
