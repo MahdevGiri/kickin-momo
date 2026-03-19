@@ -76,6 +76,7 @@
     left: 2rem;
     width: 120px;
     height: auto;
+    clip-path: circle(42% at 50% 50%);
     filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.4));
     transition: transform 0.5s ease;
 
