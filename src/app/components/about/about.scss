@@ -69,3 +69,17 @@
         height: 250px;
     }
 }
+
+.halal-image-badge {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.4));
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

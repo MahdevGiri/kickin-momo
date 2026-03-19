@@ -48,7 +48,7 @@ export class FullMenu {
             items: [
                 { name: 'Sekuwa with Fries', price: '$15.99', description: 'Authentic Nepali BBQ skewers marinated in Himalayan spices, served with fries.', image: 'assets/images/sekuwa-with-fries.png' },
                 { name: 'Saphale (3 pcs)', price: '$11.99', description: 'Pan fried Nepali stuffed flatbread filled with seasoned meat and veggies — crispy & hearty.', image: 'assets/images/saphale.png' },
-                { name: 'Sausage Flower with Cheese Stick', price: '$12.99', description: 'Deep fried spiral sausage paired with gooey mozzarella cheese stick and dipping sauce.', image: 'assets/images/sausage-flower-with-cheese-stick.png' },
+                { name: 'Chicken Sausage Flower with Cheese Stick', price: '$12.99', description: 'Deep fried spiral chicken sausage paired with gooey mozzarella cheese stick and dipping sauce.', image: 'assets/images/sausage-flower-with-cheese-stick.png' },
                 { name: 'Chilli Chicken', price: '$13.99', description: 'Crispy chicken stir-fried with peppers, onions, and garlic in a savory Indo-Chinese chili sauce.', image: 'assets/images/chilli-chicken.png' },
                 { name: 'Yomari (Featured Nepali Sweet)', price: '$5.99', description: 'Soft steamed Nepali dumpling filled with warm caramel-like molasses and sesame.', image: 'assets/images/yomari.png' }
             ]
